@@ -60,7 +60,7 @@ $ nodemon index.js
 
 Contributors names and contact info
 
-* Siddhesh Pawar:&nbsp;siddeshpawar03@gmail.com <br>
+* Kajal Ghadage :&nbsp;kajalsghadage@gmail.com <br>
 * Disha Doshi:&nbsp;dishadoshi555@gmail.com
 
 
