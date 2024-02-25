@@ -9,7 +9,7 @@ Here, we propose a system that can generate the formatted prescriptions from the
 
 As shown in the diagram We provide registration and login option to the doctor. During registration, it takes a doctor's Personal information and stores it into the database. All information of the doctor is stored in plain text format except passwords are stored as hash instead of the original input for security purposes. At the time of login, it takes the email id and password from the doctor and checks whether it is valid or not by doing authentication.
 If the doctor is authenticated successfully then Doctor can record the prescription in his voice and Google Speech Recognition API will convert the speech into text. Converted text will then sent to the Bilstm-CRF NER (Named Entity Recognition) model which is deployed on REST API using FAST API. Which will first perform some preprocessing tasks like tokenization and word limits. Then the model will do further extractions of entities from text such as  Drug, Dosage, Symptoms, Strength, Form, Frequency, Duration, Route, or other. Where each of the words in the text is classified into one of these entities. 
-The model output is then sent back to the application in JSON format. The application then generates a medical prescription using the model output which is then verified by a doctor and sent to the patient via MAIL.
+The model output is then sent back to the application in JSON format. The application then generates a medical prescription using the model output which is then verified by a doctor and sent to the patient via Mail.
 
 
 
